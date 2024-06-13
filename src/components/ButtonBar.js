@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import VideoContainer from './VideoContainer'
 
 const ButtonBar = () => {
   return (
@@ -21,6 +22,7 @@ const ButtonBar = () => {
         <Button title="Cooking"/>
         <Button title="Technology"/>
         <Button title="Music"/>
+        <VideoContainer/>
     </div>
   )
 }
