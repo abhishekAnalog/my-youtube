@@ -5,7 +5,6 @@ const Button = ({ title }) => {
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
   };
-  console.log("Button", title);
   return (
     <button
       className="p-2 m-2 border hover:bg-gray-400 rounded"
