@@ -10,11 +10,12 @@ const VideoContainer = () => {
   }, []);
 
   const getApi = async () => {
-    const data = await fetch(videoApi);
+    const data = await fetch(videoApi,{
+      cache:'force-cache'
+    });
     const json = await data.json();
     setData(json?.items);
   };
-  console.log(data);
   return (
     <div className="flex flex-wrap">
       {data?.length > 0 &&

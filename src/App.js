@@ -21,9 +21,10 @@ function App() {
     <div className="App">
       <Provider store={store}>
       <div>
+      <Header/>
+
       <RouterProvider router={appRouter}>
 
-        <Header/>
         <Body/>
       </RouterProvider>
 
